@@ -158,17 +158,62 @@ button {
 	margin-top: auto;
 }
 
-@media (min-width: 1080px) {
+.most-read {
+	display: flex;
+	flex-direction: column;
+	gap: 12px;
+	margin-bottom: 28px;
+}
+
+.read-item {
+	display: flex;
+	gap: 12px;
+	align-items: center;
+	border-bottom: 1px solid #ddd7cb;
+	padding-bottom: 12px;
+}
+
+.read-number {
+	font-family: Georgia, "Times New Roman", Times, serif;
+	font-size: 28px;
+	font-weight: bold;
+	color: #9c2a1f;
+}
+
+.read-item p {
+	font-size: 16px;
+	line-height: 1.35;
+}
+
+@media (min-width: 768px) {
 	body {
-		max-width: 1120px;
+		max-width: 900px;
 	}
 
 	.headline {
 		flex-direction: row;
 	}
 
+	.headline-text {
+		flex: 1;
+	}
+
 	.headline-photo {
 		width: 300px;
 		height: 220px;
+	}
+
+	.headline-photo {
+		width: 300px;
+		height: 220px;
+	}
+}
+@media (min-width: 1080px) {
+	body {
+		max-width: 1120px;
+	}
+	.content {
+		flex-direction: row;
+		align-items: flex-start;
 	}
 }
